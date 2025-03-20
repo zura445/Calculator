@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-red-400: #e17457;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
