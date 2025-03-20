@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 function Monitor() {
+  const [calcColor, setCalcColor] = useState<number>(0);
+
   return (
     <div>
       <div className="flex justify-between items-center">
@@ -13,8 +17,17 @@ function Monitor() {
                 <p>3</p>
               </div>
             </div>
-            <div className="w-[71px] h-[26px] bg-blue-900 rounded-[13px] mt-1.5 p-[5px]">
-              <div className="w-4 h-4 bg-red-700 rounded-full"></div>
+            <div className="relative">
+              <input
+                onChange={(e) => {
+                  setCalcColor(parseInt(e.target.value));
+                }}
+                type="range"
+                min="1"
+                max="3"
+                // ვერ ვუცვლი ფერს მოძრავ წრეს
+                className="peer w-[71px] px-2 h-6.5 bg-blue-900  rounded-[13px] appearance-none cursor-pointer"
+              />
             </div>
           </div>
         </div>
