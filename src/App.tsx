@@ -1,9 +1,14 @@
 import "./App.css";
+import Buttons from "./components/Buttons";
+import Monitor from "./components/monitor";
 
 function App() {
   return (
     <>
-      <div className="bg-red-400">zura</div>
+      <div className="w-[320px] md:w-[540px]">
+        <Monitor />
+        <Buttons />
+      </div>
     </>
   );
 }

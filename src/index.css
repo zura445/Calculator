@@ -3,6 +3,9 @@
 @theme {
   --color-*: initial;
   --color-red-400: #e17457;
+  --color-white: #ffffff;
+  --color-blue-900: #242d44;
+  --color-red-700: #d03f2f;
 }
 
 body {
@@ -11,4 +14,5 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #5656b6;
 }
