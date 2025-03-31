@@ -29,7 +29,7 @@ function Monitor() {
                 min="1"
                 max="3"
                 // ვერ ვუცვლი ფერს მოძრავ წრეს
-                className="peer w-[71px] px-2 h-6.5 bg-blue-900 rounded-[13px] appearance-none cursor-pointer"
+                className="w-[71px] px-2 h-6.5 bg-blue-900 rounded-[13px] appearance-none cursor-pointer"
               />
             </div>
           </div>
