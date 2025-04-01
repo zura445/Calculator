@@ -28,7 +28,6 @@ function Monitor() {
                 defaultValue={1}
                 min="1"
                 max="3"
-                // ვერ ვუცვლი ფერს მოძრავ წრეს
                 className="w-[71px] px-2 h-6.5 bg-blue-900 rounded-[13px] appearance-none cursor-pointer"
               />
             </div>

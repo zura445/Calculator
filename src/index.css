@@ -6,8 +6,10 @@
   --color-*: initial;
   --color-red-400: #e17457;
   --color-white: #ffffff;
-  --color-blue-900: #242d44;
+  --color-blue-900: #242d44; 
+  --color-blue-700: #434A59
   --color-red-700: #d03f2f;
+  --color-gray-300: #b3a497;
 }
 
 * {
@@ -22,5 +24,4 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* background-color: #5656b6; */
 }
