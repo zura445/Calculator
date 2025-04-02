@@ -22,6 +22,7 @@ function Monitor() {
             <div className="relative">
               <input
                 onChange={(e) => {
+                  document.body.classList.add("dark");
                   setCalcColor(parseInt(e.target.value));
                 }}
                 type="range"
@@ -34,6 +35,11 @@ function Monitor() {
           </div>
         </div>
       </div>
+      <input
+        type="text"
+        // არ მუშაობს პედინგი და ბექგრაუნდი
+        className="w-full h-[128px] text-[56px] text-right text-white bg-blue-800 px-4"
+      />
     </div>
   );
 }
