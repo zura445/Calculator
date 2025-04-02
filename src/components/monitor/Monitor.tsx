@@ -8,12 +8,16 @@ function Monitor() {
   return (
     <div>
       <div className="flex justify-between items-center">
-        <p className="text-white text-[32px] font-bold">calc</p>
+        <p className="text-white text-[32px] font-bold light:text-gray-800 dark:text-yellow-800">
+          calc
+        </p>
         <div className="flex items-end">
-          <p className="text-xs text-white pb-1.5">THEME</p>
+          <p className="text-xs text-white pb-1.5 light:text-gray-800 dark:text-yellow-800">
+            THEME
+          </p>
           <div className="ml-6.5">
             <div className="text-white">
-              <div className="flex justify-center gap-3">
+              <div className="flex justify-center gap-3 light:text-gray-800 dark:text-yellow-800">
                 <p>1</p>
                 <p>2</p>
                 <p>3</p>
@@ -22,14 +26,25 @@ function Monitor() {
             <div className="relative">
               <input
                 onChange={(e) => {
-                  document.body.classList.add("dark");
-                  setCalcColor(parseInt(e.target.value));
+                  const value = parseInt(e.target.value);
+                  setCalcColor(value);
+
+                  if (value === 3) {
+                    document.body.classList.add("dark");
+                    document.body.classList.remove("light");
+                  } else if (value === 2) {
+                    document.body.classList.add("light");
+                    document.body.classList.remove("dark");
+                  } else {
+                    document.body.classList.remove("dark");
+                    document.body.classList.remove("light");
+                  }
                 }}
                 type="range"
                 defaultValue={1}
                 min="1"
                 max="3"
-                className="w-[71px] px-2 h-6.5 bg-blue-900 rounded-[13px] appearance-none cursor-pointer"
+                className="w-[71px] px-2 h-6.5 bg-blue-800 rounded-[13px] appearance-none cursor-pointer"
               />
             </div>
           </div>
@@ -37,7 +52,6 @@ function Monitor() {
       </div>
       <input
         type="text"
-        // არ მუშაობს პედინგი და ბექგრაუნდი
         className="w-full h-[128px] text-[56px] text-right text-white bg-blue-800 px-4"
       />
     </div>
