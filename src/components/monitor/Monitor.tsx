@@ -12,7 +12,7 @@ function Monitor() {
           calc
         </p>
         <div className="flex items-end">
-          <p className="text-xs text-white pb-1.5 light:text-gray-800 dark:text-yellow-800">
+          <p className="text-xs text-white pb-1.5 light:text-gray-800 dark:text-yellow-800 pb-2">
             THEME
           </p>
           <div className="ml-6.5">
@@ -52,7 +52,7 @@ function Monitor() {
       </div>
       <input
         type="text"
-        className="w-full h-[128px] text-[56px] text-right text-white bg-blue-800 px-4"
+        className="w-full h-[128px] text-[56px] text-right text-white bg-blue-800 px-4 light:bg-red-100 dark:bg-gray-900 light:text-gray-800 dark:text-yellow-800 mt-8 rounded-md"
       />
     </div>
   );
