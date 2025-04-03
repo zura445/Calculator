@@ -27,6 +27,18 @@ function Buttons() {
           key={index}
           className={`w-[101px] h-[64px] text-blue-700 bg-red-500 light:bg-red-200 dark:bg-violet-800 rounded-md font-bold text-lg light:text-gray-800 dark:text-yellow-800 cursor-pointer ${
             index >= calcButtons.length - 2 ? "col-span-2 w-[222px]" : ""
+          } ${
+            calc === "DEL"
+              ? "bg-zura-100 text-white light:bg-zura-200 dark:bg-zura-700"
+              : ""
+          } ${
+            calc === "RESET"
+              ? "bg-zura-100 text-white light:bg-zura-200 dark:bg-zura-700"
+              : ""
+          } ${
+            calc === "="
+              ? "bg-red-700 text-white light:bg-zura-500 dark:bg-zura-300"
+              : ""
           }`}
         >
           {calc}

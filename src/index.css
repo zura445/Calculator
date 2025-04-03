@@ -12,6 +12,8 @@
   --color-blue-800: #181f33;
   --color-blue-700: #434a59;
   --color-blue-600: #3a4663;
+  --color-zura-100: #647198;
+  --color-zura-300: #00ded0;
   --color-red-700: #d03f2f;
   --color-red-500: #eae3dc;
   --color-red-200: #e5e4e1;
@@ -23,6 +25,9 @@
   --color-gray-200: #e6e6e6;
   --color-yellow-800: #ffe53d;
   --color-violet-800: #331c4d;
+  --color-zura-200: #378187;
+  --color-zura-500: #c85402;
+  --color-zura-700: #56077c;
 }
 
 body {

@@ -1,10 +1,6 @@
-import { useState } from "react";
 import "./monitor.css";
 
 function Monitor() {
-  const [calcColor, setCalcColor] = useState<number>(0);
-  console.log("🚀 ~ Monitor ~ calcColor:", calcColor);
-
   return (
     <div>
       <div className="flex justify-between items-center">
@@ -27,8 +23,6 @@ function Monitor() {
               <input
                 onChange={(e) => {
                   const value = parseInt(e.target.value);
-                  setCalcColor(value);
-
                   if (value === 3) {
                     document.body.classList.add("dark");
                     document.body.classList.remove("light");
