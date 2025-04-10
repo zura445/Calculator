@@ -8,7 +8,7 @@ function Monitor() {
           calc
         </p>
         <div className="flex items-end">
-          <p className="text-xs text-white pb-1.5 light:text-gray-800 dark:text-yellow-800 pb-2">
+          <p className="text-xs text-white light:text-gray-800 dark:text-yellow-800 pb-2">
             THEME
           </p>
           <div className="ml-6.5">
