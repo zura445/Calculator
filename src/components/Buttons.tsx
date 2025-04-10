@@ -44,15 +44,15 @@ function Buttons({ setMeaningButtons }: ButtonsProps) {
             index >= calcButtons.length - 2 ? "col-span-2 w-[222px]" : ""
           } ${
             calc === "DEL"
-              ? "bg-zura-100 text-white light:bg-zura-200 dark:bg-zura-700"
+              ? "bg-blue-400 text-white light:bg-blue-500 dark:bg-violet-600"
               : ""
           } ${
             calc === "RESET"
-              ? "bg-zura-100 text-white light:bg-zura-200 dark:bg-zura-700"
+              ? "bg-blue-400 text-white light:bg-blue-500 dark:bg-violet-600"
               : ""
           } ${
             calc === "="
-              ? "bg-red-700 text-white light:bg-blue-500 dark:bg-zura-300"
+              ? "bg-red-700 text-white light:bg-blue-500 dark:bg-sky-700"
               : ""
           }`}
         >
