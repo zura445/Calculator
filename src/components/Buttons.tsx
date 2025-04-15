@@ -1,10 +1,8 @@
-import React from "react";
-
 interface ButtonsProps {
-  setMeaningButtons: (value: string) => void;
+  handleButtonClick: (value: number | string) => void;
 }
 
-function Buttons({ setMeaningButtons }: ButtonsProps) {
+function Buttons({ handleButtonClick }: ButtonsProps) {
   let calcButtons: (number | string)[] = [
     7,
     8,
@@ -25,14 +23,6 @@ function Buttons({ setMeaningButtons }: ButtonsProps) {
     "RESET",
     "=",
   ];
-
-  const handleButtonClick = (value: number | string) => {
-    if (typeof value === "string") {
-      setMeaningButtons(value);
-    } else {
-      setMeaningButtons(value.toString());
-    }
-  };
 
   return (
     <div className="grid grid-cols-4 gap-5 bg-blue-900 dark:bg-gray-900 light:bg-gray-300 rounded-md p-8 mt-8">

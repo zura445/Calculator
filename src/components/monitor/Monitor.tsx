@@ -1,6 +1,11 @@
 import "./monitor.css";
+import React from "react";
 
-function Monitor() {
+interface MonitorProps {
+  displayText: string;
+}
+
+function Monitor({ displayText }: MonitorProps): React.ReactNode {
   return (
     <div>
       <div className="flex justify-between items-center">
@@ -44,10 +49,9 @@ function Monitor() {
           </div>
         </div>
       </div>
-      <input
-        type="text"
-        className="w-full h-[128px] text-[56px] text-right text-white bg-blue-800 px-4 light:bg-red-100 dark:bg-gray-900 light:text-gray-800 dark:text-yellow-800 mt-8 rounded-md"
-      />
+      <div className="w-full h-[128px] text-[56px] text-right text-white bg-blue-800 px-4 light:bg-red-100 dark:bg-gray-900 light:text-gray-800 dark:text-yellow-800 mt-8 rounded-md">
+        {displayText}
+      </div>
     </div>
   );
 }
