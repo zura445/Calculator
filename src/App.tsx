@@ -3,14 +3,26 @@ import "./App.css";
 import Buttons from "./components/Buttons";
 import Monitor from "./components/monitor/Monitor";
 
+const multiplicators = ["+", "-", ".", "X", "/"];
+
 function App() {
   const [displayText, setDisplayText] = useState<string>("");
+  const [calculated, setCalculated] = useState<boolean>(false);
 
-  const handleButtonClick = (value: number | string) => {
+  const handleButtonClick = (value: string | number) => {
     if (value === "RESET") {
       setDisplayText("");
+    } else if (value === "=") {
+      setDisplayText(eval(displayText.replace("X", "*")).toString());
+      setCalculated(true);
+    } else if (value === "DEL") {
+      setDisplayText(displayText.slice(0, -1));
     } else {
-      setDisplayText((prev) => prev + value);
+      if (!displayText && multiplicators.includes(value as string)) {
+        return;
+      }
+      setDisplayText((prev) => (calculated ? value.toString() : prev + value));
+      setCalculated(false);
     }
   };
 
