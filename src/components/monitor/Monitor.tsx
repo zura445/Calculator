@@ -49,7 +49,7 @@ function Monitor({ displayText }: MonitorProps): React.ReactNode {
           </div>
         </div>
       </div>
-      <div className="w-full h-[128px] text-[56px] text-right text-white bg-blue-800 px-4 light:bg-red-100 dark:bg-gray-900 light:text-gray-800 dark:text-yellow-800 mt-8 rounded-md">
+      <div className="w-full h-[128px] flex items-center text-[56px] justify-end text-white bg-blue-800 px-4 light:bg-red-100 dark:bg-gray-900 light:text-gray-800 dark:text-yellow-800 mt-8 rounded-md">
         {displayText}
       </div>
     </div>
