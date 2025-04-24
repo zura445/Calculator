@@ -1,0 +1,64 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+.main{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 10px solid black;
+    border-style: double;
+    padding: 6px;
+}
+
+.calc-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+.logo{
+    width: 100px;
+}
+.sun-power{
+    width: 200px;
+    height: 55px;
+    background-color: gray;
+    border-radius: 8px;
+}
+input{
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+    font-size: 26px;
+    border: 3px solid black;
+    font-weight: bold;
+    padding: 0 10px;
+    text-align: right;
+    border-radius: 8px;
+}
+button{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.grid-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 6px;
+}
